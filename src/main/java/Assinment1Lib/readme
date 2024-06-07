@@ -1,0 +1,45 @@
+Name:
+Roll No.: 2022322
+Section: A
+Topic: AP-ASSIGNMENT-1
+
+
+This whole Assignment-1 is a Project which has Build System : Maven
+The file pom.xml has all the info regrading the build system and other details.
+The main code files are in the folder : /src/main/java/Assignment-1
+The package of this is "Assinment1Lib".
+
+
+---:Steps to Run The Project:---
+1. Compile the whole project using Maven tools  tab in the right corner of IntelliIj.
+2. Double-Click on the compile tool it will compile all the project source files.
+4. Now select the file "Main.java".
+5. Now run this selected file. This file uses the other two files for the librarian and member functions .
+
+
+:---Libraries used in whole project:---
+Note: These all libraries come preinstalled with JDK
+import java.util.Scanner;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+
+
+:---Data Structures used:---
+The program uses data structures such as arrays to store information about members and books.
+all members, their phone numbers, ID, etc are stored in array.
+These are declared as static so that we don't create this every time as they act as a database for every record of member and book.
+
+
+:---Description of the Logic used to develop the project:---
+I have created seven classes : book1, books1, Librarian1, Member1, student, students, Library . Now the main file for overall execution is: Library.java
+I have created book1 class in which it stores variables and getter setter methods etc related to books functions.
+I have created student class in which it stores variables and getter setter methods etc related to member functions.
+In books1 and students all the functions are defined in the classes.
+In Librarian1 and Member1 the menu of both library and member are stored. in If-Else part functions are called which we have created in books1 and students.
+Library is the main file in which it runs
+Depending on the user's choice, the program takes different paths:
+If the user selects "Enter as a Librarian" (option 1), it creates an instance of the Librarian class, allowing librarians to manage the library.
+If the user selects "Enter as a Member" (option 2), it prompts the user to enter their name and phone number and checks if a member with those details exists. If found, the user can interact with their member account.
+If the user selects "Exit" (option 3), the loop termination condition is met.
+Now after choosing a proper branch the controlled is transfer to the appropriate class which have its methods and thus all functionalities are carried out.
